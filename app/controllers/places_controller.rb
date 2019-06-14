@@ -37,4 +37,9 @@ class PlacesController < ApplicationController
 
   end
 
+  def edit
+
+
+  end
+
 end
