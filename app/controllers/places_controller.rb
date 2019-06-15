@@ -29,6 +29,10 @@ class PlacesController < ApplicationController
 
   end
 
+  def edit
+
+ ends
+
   private
 
   def place_params
@@ -37,9 +41,6 @@ class PlacesController < ApplicationController
 
   end
 
-  def edit
-
-
-  end
+  
 
 end
