@@ -1,5 +1,5 @@
  @import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
-
+ @import "font-awesome";
 
 .booyah-box {
   
@@ -55,4 +55,14 @@ body {
 
 }
 
+.invalid-feedback {
+
+  color:#ff3333;
+
+  background-color: #FFEEEE;
+
+  border-radius: 3px;
+
+  padding: 2px 8px 2px 8px;
+}
 
