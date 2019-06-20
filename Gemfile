@@ -86,3 +86,7 @@ end
 gem 'simple_form'
 
 gem "font-awesome-rails"
+
+gem "geocoder"
+
+gem "figaro"
