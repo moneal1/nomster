@@ -95,6 +95,8 @@ end
 
   end
 
-  
+ def each 
+
+ end
 
 end
