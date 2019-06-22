@@ -12,9 +12,7 @@
     <style>
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
-      #map {
-        height: 300px;
-      }
+      
       /* Optional: Makes the sample page fill the window. */
       html, body {
         height: 100%;
@@ -25,13 +23,16 @@
   </head>
   <body>
     <div id="map"></div>
+
+  <% if @place.latitude.present? && @place.longitude.present? %>
+
     <script>
 
       function initMap() {
-        var myLatLng = {lat: -25.363, lng: 131.044};
+        var myLatLng = {lat: <%= @place.latitude %>, lng: <%= @place.longitude %>};
 
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
+          zoom: 12,
           center: myLatLng
         });
 
@@ -45,6 +46,12 @@
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgYF-mCOxgd-zwF8FSdq9iImdeWMclQaQ&callback=initMap">
     </script>
+
+    <div id="map"></div>
+
+  <% end %>
+
+  <br />
 
 
   <div class="float-right">
