@@ -97,6 +97,7 @@ end
 
  def each 
 
+  @place = Place.find(params[:id])
  end
 
 end
