@@ -36,6 +36,7 @@ class PlacesController < ApplicationController
   def show
 
     @place = Place.find(params[:id])
+    @comment = Comment.new
 
     #if @place.user != current_user
 
