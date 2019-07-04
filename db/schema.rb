@@ -26,7 +26,7 @@ ActiveRecord::Schema.define(version: 2019_06_22_031244) do
     t.index ["user_id", "place_id"], name: "index_comments_on_user_id_and_place_id"
   end
 
-  create_table "places", force: :cascade do |t|
+  create_table "places", id: :serial, force: :cascade do |t|
     t.string "name"
     t.text "description"
     t.string "address"
