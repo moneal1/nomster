@@ -88,3 +88,7 @@ end
 gem "geocoder"
 
 gem "figaro"
+
+gem 'will_paginate', '~> 3.1', '>= 3.1.6'
+
+gem 'carrierwave', '~> 1.0'
