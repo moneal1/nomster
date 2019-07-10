@@ -37,7 +37,7 @@ class PlacesController < ApplicationController
 
     @place = Place.find(params[:id])
     @comment = Comment.new
-    @photos = Photos.find(params[:id])
+    @photo = Photo.new
     #if @place.user != current_user
 
       #return render plain: 'Not Allowed', status: :forbidden
@@ -45,7 +45,6 @@ class PlacesController < ApplicationController
     #end
 
     end
-  
 
   def edit
 
