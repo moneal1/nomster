@@ -11,9 +11,8 @@ end
 private
 
 def photo_params
-  params.require(:photo).permit(:message, :rating)
-  @photo = photo.find(params[:picture_id])
-  <%= image_tage 'picture_id', class: Photo
+  params.require(:photo).permit(:picture, :caption)
+
  end  
 
 
