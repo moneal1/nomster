@@ -124,12 +124,12 @@
   <% end %>
 </div>
 
+
 <%= simple_form_for @photo, url: place_photos_path(@place) do |f| %>
   <%= f.input :caption %>
   
   <%= f.input :picture %>
   <%= f.submit "Add a Photo", class: 'btn btn-primary' %>
-  <%= image_tag :photo.picture.url %>
 <% end %>
 <div class="col-12 col-sm-6">
   <blockquote>
