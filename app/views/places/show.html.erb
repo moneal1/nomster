@@ -129,13 +129,15 @@
   
   <%= f.input :picture %>
   <%= f.submit "Add a Photo", class: 'btn btn-primary' %>
+  <%= image_tag :photo.picture.url %>
 <% end %>
 <div class="col-12 col-sm-6">
   <blockquote>
     <% if @place.photos.last %>
       <b><%= @place.photos.last %></b> -
     <% end %>
-    <%= @place.photos.last.caption %>
-    <small><%= @place.photos.last.user.email %></small>
+    <%= @place.photos.last %>
+    <small><%= @place.photos.last %></small>
+
   </blockquote>
 </div>
