@@ -117,7 +117,6 @@
           <b><%= comment.humanized_rating %></b> -
         <%= comment.message %>
         <% end %>
-        
         <small>- <%= comment.user.email %></small>
       </blockquote>
     </div>
@@ -132,12 +131,7 @@
   <%= f.submit "Add a Photo", class: 'btn btn-primary' %>
 <% end %>
 <div class="col-12 col-sm-6">
-  <blockquote>
-    <% if @place.photos.last %>
-      <b><%= @place.photos.last %></b> -
-    <% end %>
-    <%= @place.photos.last %>
-    <small><%= @place.photos.last %></small>
-
-  </blockquote>
+<% @place.photos.each do |photo| %>
+<%= image_tag photo.picture.to_s %>
+<% end %>
 </div>
