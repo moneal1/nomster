@@ -86,6 +86,7 @@
       
   <%= simple_form_for @comment, url: place_comments_path(@place) do |f| %>
     <div class="modal-body">
+
       <%= f.input :message %>
       <%= f.input :rating, as: :select, collection: Comment::RATINGS %>
     </div>
@@ -106,9 +107,9 @@
    </div>
    
   <!-- Button trigger modal -->
-  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-  Launch demo modal
-</button>
+  <div class="float-right">
+        <button type="button" class="btn btn-secondary float-right" data-toggle="modal" data-target="#myModal">Add a Comment</button>
+    </div>
 
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -137,9 +138,20 @@
 
   
 </div>
-<h1>Comments</h1>
+<h1>Add a comment</h1>
 <div class="clear"></div>
 <div class="row col-10 offset-1">
+  <%= simple_form_for @comment, url: place_comments_path(@place) do |f| %>
+  <div class="modal-body">
+          <%= f.input :message %>
+          <%= f.input :rating, as: :select, collection: Comment::RATINGS %>
+          <%= f.submit "Add a Comment", class: 'btn btn-primary' %>
+          <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+      <% end %>
+        </div>
   <% @place.comments.each do |comment| %>
     <div class="col-12 col-sm-6">
       <blockquote class="comment">
@@ -170,6 +182,5 @@
 </div>
 
 
-  
+<% end %> 
 
-<% end %>
