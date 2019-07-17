@@ -11,7 +11,7 @@ class Comment < ApplicationRecord
     '****': '4_stars',
     '*****': '5_stars'
   }
-end
+
 
   def humanized_rating
     RATINGS.invert[self.rating]
@@ -22,4 +22,5 @@ end
     NotificationMailer.comment_added(self).deliver_now
 
   end
+
 end
