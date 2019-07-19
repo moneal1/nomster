@@ -6,7 +6,7 @@ class UsersController < ApplicationController
 end
 
 def name
-  @place = name.new
+  @name = name.new
 end
-
+end
 
