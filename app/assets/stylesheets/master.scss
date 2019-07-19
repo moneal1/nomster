@@ -30,6 +30,10 @@ h1, h2, h3, h4, h5, h6 {
 
   padding:0;
 
+  font-size: 100px;
+
+  font-color: 68db0f;
+
 
 }
 
@@ -138,13 +142,15 @@ blockquote p {
 
 .line {
   font-family: 'Helvetica Neue', Helvetica, sans-serif;
-  font-size: 200%;
+  font-size: 300%;
   font-weight: bold;
   font-style: italic;
+  padding-bottom: 50px;
 }
 
 .clover {
   border-image: none;
   size: 100px;
-  padding-bottom: 50%
+  padding-bottom: 20px;
+  width: 100%;
 }
