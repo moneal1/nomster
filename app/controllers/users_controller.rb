@@ -8,5 +8,4 @@ end
 def name
   @name = name.new
 end
-end
 
