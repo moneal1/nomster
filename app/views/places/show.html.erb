@@ -148,7 +148,7 @@
           <%= f.submit "Add a Comment", class: 'btn btn-primary' %>
           <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        
       </div>
       <% end %>
         </div>
@@ -169,8 +169,8 @@
   
     <%= simple_form_for @photo, url: place_photos_path(@place) do |f| %>
       <div class="modal-body">
-        <%= f.input :caption %>
-        <%= f.submit "Add a caption", class: 'btn btn-primary' %>
+        <%= f.input :caption %><%= f.submit "Add a caption", class: 'btn btn-primary' %>
+        
         <%= f.input :picture %>
       </div>
     <%= f.submit "Add a Photo", class: 'btn btn-primary' %>
