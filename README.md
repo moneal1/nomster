@@ -1,24 +1,19 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Nomster
+Foobar is a project designed to build a Yelp clone that integrates with the Google map API and includes features like user comments, star ratings, image uploading, and user authentication.
 
-Things you may want to cover:
+Installation
+To run Nomster on Heroku https://nomster-mike-oneal.herokuapp.com/
 
-* Ruby version
+Nomster was designed with HTML, CSS, RUBY, RAILS, ALGORITHMS
+In this project, I created places to eat while giving an option to comment and rate the place. Google maps was also used to create a map with the pinpointed address displayed on page.
 
-* System dependencies
 
-* Configuration
+Contributing
+Project for University of Arizona
 
-* Database creation
 
-* Database initialization
+License
+U of A
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
